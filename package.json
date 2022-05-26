@@ -1,6 +1,6 @@
 {
   "name": "@nenjotsu/linked-list-typescript",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "simple typescript linked-list with generics typing",
   "main": "lib/src/index.js",
   "typings": "lib/src/index",
