@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/nenjotsu/linked-list-typescript#readme",
   "scripts": {
-    "pretest": "yarn run build",
+    "pretest": "npm run build",
     "build": "tsc",
     "test": "nyc ./node_modules/.bin/mocha",
-    "coverage": "yarn run build && nyc ./node_modules/.bin/mocha",
+    "coverage": "npm run build && nyc ./node_modules/.bin/mocha",
     "coverage:lcov": "nyc report --reporter=text-lcov | coveralls",
     "coverage:report": "./node_modules/.bin/nyc report --reporter text-summary --reporter html && open coverage/index.html",
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
@@ -46,5 +46,9 @@
     "source-map-support": "^0.5.4",
     "ts-node": "^5.0.1",
     "typescript": "^2.8.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }
