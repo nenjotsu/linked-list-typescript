@@ -80,6 +80,41 @@ export class LinkedList<T> {
     }
   }
 
+  indexOf(element: T) {
+    let nodeIndex = 0;
+    let currentItem = this._head;
+  
+    while (currentItem) {
+      if (element === currentItem.value) {
+        return nodeIndex;
+      }
+  
+      nodeIndex++;
+  
+      currentItem = currentItem.next;
+    }
+  }
+
+  findElement(index: number) {
+    let currentItem = this._head;
+    let count = 0;
+
+    if (!Boolean(currentItem)) {
+      return null;
+    }
+
+    while (currentItem) {
+      if (count === index) {
+        return currentItem.value;
+      }
+      
+      count++;
+      currentItem = currentItem.next;
+    }
+    
+    return null;
+  }
+
   // Adds the element at the end of the linked list
   append(val: T, checkDuplicates: boolean = false): boolean {
 

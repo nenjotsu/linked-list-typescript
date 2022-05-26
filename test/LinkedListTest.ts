@@ -523,4 +523,36 @@ describe('Linked-List Tests', () => {
     expect(result[4]).to.equal(8);
     expect(result[5]).to.equal(9);
   })
+
+  it('should return the node by nth index', () => {
+    let values: string[] = ['A', 'B', 'C']
+    let list = new LinkedList<string>(...values);
+    expect(list.length).to.equal(3);
+    expect(list.findElement(1)).to.equal('B');
+    expect(list.findElement(2)).to.equal('C');
+  })
+
+  it('should return null if index is not found', () => {
+    let values: string[] = ['A', 'B', 'C']
+    let list = new LinkedList<string>(...values);
+    expect(list.length).to.equal(3);
+    expect(list.findElement(3)).to.be.null;
+  })
+
+  it('should return null if list is empty', () => {
+    let list = new LinkedList<string>();
+    expect(list.length).to.equal(0);
+    expect(list.findElement(1)).to.be.null;
+  })
+
+  it('should return the index by node', () => {
+    let values: string[] = ['A', 'B', 'C']
+    let list = new LinkedList<string>(...values);
+    expect(list.length).to.equal(3);
+    expect(list.indexOf('C')).to.equal(2);
+    expect(list.indexOf('B')).to.equal(1);
+    expect(list.indexOf('A')).to.equal(0);
+  })
+
+  
 });

@@ -1,5 +1,5 @@
 {
-  "name": "linked-list-typescript",
+  "name": "@nenjotsu/linked-list-typescript",
   "version": "1.0.15",
   "description": "simple typescript linked-list with generics typing",
   "main": "lib/src/index.js",
@@ -7,7 +7,7 @@
   "files": [
     "lib/src/"
   ],
-  "repository": "https://github.com/sfkiwi/linked-list-typescript.git",
+  "repository": "https://github.com/nenjotsu/linked-list-typescript.git",
   "author": "Mike Sutherland <mjfsutherland@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -18,9 +18,9 @@
     "linkedlist"
   ],
   "bugs": {
-    "url": "https://github.com/sfkiwi/linked-list-typescript/issues"
+    "url": "https://github.com/nenjotsu/linked-list-typescript/issues"
   },
-  "homepage": "https://github.com/sfkiwi/linked-list-typescript#readme",
+  "homepage": "https://github.com/nenjotsu/linked-list-typescript#readme",
   "scripts": {
     "pretest": "yarn run build",
     "build": "tsc",
