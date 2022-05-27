@@ -1,7 +1,7 @@
-import { expect } from 'chai';
-import { LinkedList } from '../src/index'
+import { describe, it, expect } from "vitest";
+import { LinkedList } from '../src/LinkedList'
 
-class Foo {
+export class Foo {
   private val: number;
   constructor(val: number) {
     this.val = val;
