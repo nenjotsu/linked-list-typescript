@@ -254,6 +254,27 @@ export class LinkedList<T> {
     return result;
   }
 
+  startAt(num: number): T[] {
+    let iter = this.toArray();
+    let result = [];
+
+    // let n = Math.min(num, this.length);
+    // for (let [i, o] of iter) {
+    //   if (i >= num) {
+    //     // let val = iter.next();
+    //     result.push(o.value);
+    //   }
+    // }
+
+    for (let i = 0; i < this.length; i++) {
+      if (i >= num) {
+        // let val = iter.next();
+        result.push(iter[i]);
+      }
+    }
+    return result;
+  }
+
   toArray(): T[] {
     return [...this];
   }
