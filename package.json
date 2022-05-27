@@ -1,6 +1,6 @@
 {
   "name": "@nenjotsu/linked-list-typescript",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "simple typescript linked-list with generics typing",
   "main": "dist/index.js",
   "repository": "https://github.com/nenjotsu/linked-list-typescript.git",
